@@ -25,7 +25,7 @@ function Lv1() {
         <h2 className=" mb-5  text-[4rem] text-[#1780FC]">level 1</h2>
         <div
           className={` relative ml-5 h-[3rem] w-[3rem] rounded-full bg-[#1780FC] duration-300 ${
-            CardsState ? "" : "rotate-[180deg]"
+            CardsState ? "" : "rotate-[-180deg]"
           }`}
         >
           <div className=" absolute left-1 top-6 h-1 w-6 rotate-45 bg-white  "></div>
