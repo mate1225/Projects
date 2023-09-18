@@ -25,7 +25,7 @@ function Lv2() {
     <section className="  text-center">
       <Icon on={CardsState} handelClick={() => showCards()} title="level 2" />
       <div
-        className={` grid  gap-10 lg:grid-cols-2 lg:grid-rows-2 ${
+        className={` mb-[5rem] mt-10 grid gap-10 lg:grid-cols-2 lg:grid-rows-2 ${
           CardsState ? "hidden" : " grid"
         }`}
       >

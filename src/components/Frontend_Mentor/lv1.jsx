@@ -20,10 +20,10 @@ function Lv1() {
     setCardsState((prev) => !prev);
   }
   return (
-    <section className=" text-center   ">
+    <section className=" text-center">
       <Icon on={CardsState} handelClick={() => showCards()} title="level 1" />
       <div
-        className={`  gap-10 lg:grid-cols-2 lg:grid-rows-1 ${
+        className={` mb-[5rem] mt-10 gap-10 lg:grid-cols-2 lg:grid-rows-1 ${
           CardsState ? "hidden" : " grid"
         }`}
       >
