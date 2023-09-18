@@ -1,5 +1,7 @@
 import { useState } from "react";
+//jsx
 import Cards from "./cards";
+import Icon from "./Icon";
 //images
 import social_media_dashboard from "./images/social_media_dashboard.png";
 import Testimonials_grid_section from "./images/Testimonials_grid_section.png";
@@ -13,6 +15,7 @@ import react from "./images/technologies/react.png";
 import html from "./images/technologies/html.png";
 import vite from "./images/technologies/vite.png";
 import tailwind_css from "./images/technologies/tailwind-css.png";
+
 function Lv2() {
   const [CardsState, setCardsState] = useState(true);
   function showCards() {
@@ -20,21 +23,7 @@ function Lv2() {
   }
   return (
     <section className="  text-center">
-      <div
-        onClick={showCards}
-        className=" mb-3 flex  cursor-pointer items-center justify-center border-b-2 border-solid border-gray-500"
-      >
-        <h2 className=" mb-5 mt-5  text-[4rem] text-[#1780FC] ">level 2</h2>
-        <div
-          className={` relative ml-5 h-[3rem] w-[3rem] rounded-full bg-[#1780FC] duration-300 ${
-            CardsState ? "" : "rotate-[-180deg]"
-          }`}
-        >
-          <div className=" absolute left-1 top-6 h-1 w-6 rotate-45 bg-white  "></div>
-          <div className=" absolute right-1 top-6 h-1 w-6 rotate-[135deg] bg-white "></div>
-        </div>
-      </div>
-
+      <Icon on={CardsState} handelClick={() => showCards()} title="level 2" />
       <div
         className={` grid  gap-10 lg:grid-cols-2 lg:grid-rows-2 ${
           CardsState ? "hidden" : " grid"
