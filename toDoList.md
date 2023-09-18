@@ -1,1 +1,2 @@
-- megoldani az előnézetett!!
+- megoldni hogy amikor rákattint valki a képre egy card-on akkor az a kép a képernyű közepén maradjon folyamatosan amíg nem kattint rá a felhasználó
+- making a technologies images prop
