@@ -4,7 +4,7 @@ import Cards from "./cards";
 import ProductPreviewCardImg from "./images/Product_Preview_Card.png";
 import Order_summary_card from "./images/Order_summary_card.png";
 function Lv1() {
-  const [imgState, setImgState] = useState(false);
+  const [imgState, setImgState] = useState(true);
   function showImage() {
     setImgState((prev) => !prev);
   }

@@ -7,7 +7,7 @@ import Time_tracking_dashboard from "./images/Time_tracking_dashboard.png";
 import Tip_Calculator_App from "./images/Tip_Calculator_App.png";
 import icon from "./images/expand_more_FILL0_wght400_GRAD0_opsz24.svg";
 function Lv2() {
-  const [imgState, setImgState] = useState(false);
+  const [imgState, setImgState] = useState(true);
   function showImage() {
     setImgState((prev) => !prev);
   }
