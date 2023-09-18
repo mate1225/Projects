@@ -10,7 +10,7 @@ import Tip_Calculator_App from "./images/Tip_Calculator_App.png";
 //technologies images
 import css from "./images/technologies/css.png";
 import scss from "./images/technologies/scss.png";
-import javascript from "./images/technologies/javascript.png";
+import javascript from "./images/technologies/JavaScript.png";
 import react from "./images/technologies/react.png";
 import html from "./images/technologies/html.png";
 import vite from "./images/technologies/vite.png";
