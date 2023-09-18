@@ -31,13 +31,16 @@ function Cards(props) {
           >
             Github Repo
           </a>
-          <img
-            src={img}
-            className={` absolute left-[5vw] top-[200px] w-[90vw] rounded-lg  ${
-              imgState ? "" : "hidden"
-            }
+          <div
+            className={` cursor-pointer ${imgState ? "" : "hidden"}`}
+            onClick={showImage}
+          >
+            <img
+              src={img}
+              className={` absolute left-[5vw] top-[200px] w-[90vw] rounded-lg  
             `}
-          />
+            />
+          </div>
         </div>
       </section>
     </>

@@ -18,7 +18,8 @@ function Lv2() {
         className=" mb-3 flex  cursor-pointer items-center justify-center border-b-2 border-solid border-gray-500"
       >
         <h2 className=" mb-5 mt-5  text-[4rem] text-[#1780FC] ">level 2</h2>
-        <img src={icon} />
+        {/* <img src={icon} /> */}
+        <div className=" ml-5 mt-5 h-[3rem] w-[3rem] rounded-full bg-[#1780FC]"></div>
       </div>
 
       <div
