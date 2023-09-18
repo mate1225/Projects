@@ -1,9 +1,11 @@
+import { useState } from "react";
 function Cards(props) {
   const { title, img, repoUrl, liveSiteUrl } = props;
+  const [imgState, setImgState] = useState(false);
   function showImage() {
-    console.log("show the image");
+    setImgState((prev) => !prev);
   }
-  //hsla(216, 45%, 11%, 1)
+
   return (
     <>
       <section className="flex flex-col gap-5 rounded-[1.25rem] bg-[#1F3454] p-10  text-white">
@@ -29,6 +31,13 @@ function Cards(props) {
           >
             Github Repo
           </a>
+          <img
+            src={img}
+            className={` absolute left-[5vw] top-[200px] w-[90vw] rounded-lg  ${
+              imgState ? "" : "hidden"
+            }
+            `}
+          />
         </div>
       </section>
     </>

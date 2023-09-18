@@ -1,0 +1,1 @@
+- megoldani az előnézetett!!

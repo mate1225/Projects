@@ -1,12 +1,26 @@
+import { useState } from "react";
 import Cards from "./cards";
 //images
 import ProductPreviewCardImg from "./images/Product_Preview_Card.png";
 import Order_summary_card from "./images/Order_summary_card.png";
 function Lv1() {
+  const [imgState, setImgState] = useState(false);
+  function showImage() {
+    setImgState((prev) => !prev);
+  }
   return (
-    <section className=" text-center ">
-      <h2 className=" mb-5  text-[4rem] text-[#1780FC]">level 1</h2>
-      <div className=" grid gap-10 lg:grid-cols-2 lg:grid-rows-1">
+    <section className=" text-center   ">
+      <div
+        onClick={showImage}
+        className=" mb-3 cursor-pointer border-b-2 border-solid border-gray-500"
+      >
+        <h2 className=" mb-5  text-[4rem] text-[#1780FC]">level 1</h2>
+      </div>
+      <div
+        className={`  gap-10 lg:grid-cols-2 lg:grid-rows-1 ${
+          imgState ? "hidden" : " grid"
+        }`}
+      >
         <Cards
           title="Product preview card"
           img={ProductPreviewCardImg}

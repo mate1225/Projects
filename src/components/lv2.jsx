@@ -1,14 +1,31 @@
+import { useState } from "react";
 import Cards from "./cards";
 //images
 import Mentor_social_media_dashboard from "./images/Mentor_social_media_dashboard.png";
 import Testimonials_grid_section from "./images/Testimonials_grid_section.png";
 import Time_tracking_dashboard from "./images/Time_tracking_dashboard.png";
 import Tip_Calculator_App from "./images/Tip_Calculator_App.png";
+import icon from "./images/expand_more_FILL0_wght400_GRAD0_opsz24.svg";
 function Lv2() {
+  const [imgState, setImgState] = useState(false);
+  function showImage() {
+    setImgState((prev) => !prev);
+  }
   return (
-    <section className=" text-center">
-      <h2 className=" mb-5 mt-5  text-[4rem] text-[#1780FC] ">level 2</h2>
-      <div className="grid gap-10 lg:grid-cols-2 lg:grid-rows-2">
+    <section className="  text-center">
+      <div
+        onClick={showImage}
+        className=" mb-3 flex  cursor-pointer items-center justify-center border-b-2 border-solid border-gray-500"
+      >
+        <h2 className=" mb-5 mt-5  text-[4rem] text-[#1780FC] ">level 2</h2>
+        <img src={icon} />
+      </div>
+
+      <div
+        className={`grid gap-10  lg:grid-cols-2 lg:grid-rows-2 ${
+          imgState ? "hidden" : " grid"
+        }`}
+      >
         <Cards
           title="social Media Dashboard"
           img={Mentor_social_media_dashboard}
