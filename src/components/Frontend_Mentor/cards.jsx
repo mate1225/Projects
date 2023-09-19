@@ -20,8 +20,8 @@ function Cards(props) {
 
   return (
     <>
-      <section className="flex flex-col gap-5 rounded-[1.25rem] bg-[#1F3454] p-10  text-white ">
-        <h2 className="text-center text-[2rem] lg:text-[2.5rem]">{title}</h2>
+      <section className="mx-5 flex flex-col gap-5 rounded-[1.25rem] bg-[#1F3454] p-5 text-white  xl:mx-0 xl:p-10">
+        <h2 className="text-center text-[1.7rem] lg:text-[2.5rem]">{title}</h2>
         <img
           src={img}
           alt="image"
@@ -64,7 +64,7 @@ function Cards(props) {
           </div>
         </div> */}
 
-        <div className=" grid gap-5 text-[1.5rem] lg:text-[2rem] ">
+        <div className=" grid gap-5 text-[1.4rem] lg:text-[2rem] ">
           <a
             className="rounded-[0.625rem] bg-[#012d91] pb-1 pt-1 text-center text-white duration-500 hover:bg-[#5200D9] hover:text-white"
             href={liveSiteUrl}
