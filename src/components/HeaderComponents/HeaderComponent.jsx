@@ -16,7 +16,7 @@ function HeaderComponent() {
           </h2>
         </div>
         <Titles text="Personal Projects" />
-        <HamburgerMenu />
+        {/*  <HamburgerMenu /> */}
       </div>
     </>
   );
