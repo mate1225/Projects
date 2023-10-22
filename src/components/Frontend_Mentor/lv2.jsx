@@ -7,6 +7,7 @@ import social_media_dashboard from "./images/social_media_dashboard.png";
 import Testimonials_grid_section from "./images/Testimonials_grid_section.png";
 import Time_tracking_dashboard from "./images/Time_tracking_dashboard.png";
 import Tip_Calculator_App from "./images/Tip_Calculator_App.png";
+import Body_Mass_Index_calculator from "./images/BodyMassIndexCalsulator.png";
 //technologies images
 import css from "./images/technologies/css.png";
 import scss from "./images/technologies/scss.png";
@@ -52,6 +53,12 @@ function Lv2() {
           img={Tip_Calculator_App}
           repoUrl="https://github.com/mate1225/Tip_Calculator"
           liveSiteUrl="https://mate1225.github.io/Tip_Calculator/"
+        />
+        <Cards
+          title="Body_Mass Index calculator"
+          img={Body_Mass_Index_calculator}
+          repoUrl="https://github.com/mate1225/Body_Mass_Index_calculator"
+          liveSiteUrl="https://mate1225.github.io/Body_Mass_Index_calculator/"
         />
       </div>
     </section>
