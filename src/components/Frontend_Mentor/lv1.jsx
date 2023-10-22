@@ -3,16 +3,16 @@ import { useState } from "react";
 import Cards from "./cards";
 import Icon from "./Icon";
 //images
-import ProductPreviewCardImg from "./images/Product_Preview_Card.png";
-import Order_summary_card from "./images/Order_summary_card.png";
+import ProductPreviewCardImg from "../../images/Product_Preview_Card.png";
+import Order_summary_card from "../../images/Order_summary_card.png";
 //technologies images
-import css from "./images/technologies/css.png";
-import scss from "./images/technologies/scss.png";
-import javascript from "./images/technologies/JavaScript.png";
-import react from "./images/technologies/react.png";
-import html from "./images/technologies/html.png";
-import vite from "./images/technologies/vite.png";
-import tailwind_css from "./images/technologies/tailwind-css.png";
+import css from "../../images/technologies/css.png";
+import scss from "../../images/technologies/scss.png";
+import javascript from "../../images/technologies/JavaScript.png";
+import react from "../../images/technologies/react.png";
+import html from "../../images/technologies/html.png";
+import vite from "../../images/technologies/vite.png";
+import tailwind_css from "../../images/technologies/tailwind-css.png";
 
 function Lv1() {
   const [CardsState, setCardsState] = useState(true);

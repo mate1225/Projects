@@ -3,19 +3,19 @@ import { useState } from "react";
 import Cards from "./cards";
 import Icon from "./Icon";
 //images
-import social_media_dashboard from "./images/social_media_dashboard.png";
-import Testimonials_grid_section from "./images/Testimonials_grid_section.png";
-import Time_tracking_dashboard from "./images/Time_tracking_dashboard.png";
-import Tip_Calculator_App from "./images/Tip_Calculator_App.png";
-import Body_Mass_Index_calculator from "./images/BodyMassIndexCalsulator.png";
+import social_media_dashboard from "../../images/social_media_dashboard.png";
+import Testimonials_grid_section from "../../images/Testimonials_grid_section.png";
+import Time_tracking_dashboard from "../../images/Time_tracking_dashboard.png";
+import Tip_Calculator_App from "../../images/Tip_Calculator_App.png";
+import Body_Mass_Index_calculator from "../../images/BodyMassIndexCalsulator.png";
 //technologies images
-import css from "./images/technologies/css.png";
-import scss from "./images/technologies/scss.png";
-import javascript from "./images/technologies/JavaScript.png";
-import react from "./images/technologies/react.png";
-import html from "./images/technologies/html.png";
-import vite from "./images/technologies/vite.png";
-import tailwind_css from "./images/technologies/tailwind-css.png";
+import css from "../../images/technologies/css.png";
+import scss from "../../images/technologies/scss.png";
+import javascript from "../../images/technologies/JavaScript.png";
+import react from "../../images/technologies/react.png";
+import html from "../../images/technologies/html.png";
+import vite from "../../images/technologies/vite.png";
+import tailwind_css from "../../images/technologies/tailwind-css.png";
 
 function Lv2() {
   const [CardsState, setCardsState] = useState(true);
