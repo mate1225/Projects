@@ -1,11 +1,11 @@
 import { useState } from "react";
-function Cards(props) {
+function Card(props) {
   const {
     title,
     img,
     repoUrl,
     liveSiteUrl,
-    /* technologies1,
+    /*   technologies1,
     technologies2,
     technologies3,
     technologies4,
@@ -28,11 +28,11 @@ function Cards(props) {
           className=" cursor-pointer rounded-[1.25rem]"
           onClick={showImage}
         />
-        {/*   <div>
+        {/* <div>
           <h3 className="  text-[1rem] font-semibold text-white">
             Used Technologies:
           </h3>
-           <div className=" mt-3 flex justify-center gap-10">
+          <div className=" mt-3 flex justify-center gap-10">
             <img
               src={technologies1}
               className={` w-[3em] ${technologies1 === "" ? "hidden" : ""}`}
@@ -79,19 +79,18 @@ function Cards(props) {
           >
             Github Repo
           </a>
-          <div
-            className={`  cursor-pointer ${imgState ? "" : "hidden"}`}
-            onClick={showImage}
-          >
-            <img
-              src={img}
-              className=" absolute left-[5vw] top-[200px] z-10 w-[90vw] rounded-lg"
-            />
-          </div>
+        </div>
+        <div
+          className={` fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform cursor-pointer ${
+            imgState ? "" : "hidden"
+          }`}
+          onClick={showImage}
+        >
+          <img src={img} className="h-full w-[90%] rounded-lg object-cover" />
         </div>
       </section>
     </>
   );
 }
 
-export default Cards;
+export default Card;

@@ -1,0 +1,3 @@
+- a kép nagyítás csak akkor tűnik el ha rá kattintunk még egyszer, tehát ha 1 kép ki van nagyítva és rá kattintunk egy másikra akkor az az előző kép ott marad , csak 1 szintel lejebb ezért nem lehet látni csak a jenlegi képet . A probléma ezzel ugye az hogy ha az ember megy végig a képken és mindegyikre bele kattint akkor után sokszor képet kell egymás után be zárni, ezért egyszerre csak 1 képnek szabad aktívnak lennie .
+- a nagyított kép mérete nem megfelelő
+- a használt technológiák szekció nem működik megfelelően

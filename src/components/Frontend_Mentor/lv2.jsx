@@ -1,6 +1,6 @@
 import { useState } from "react";
 //jsx
-import Cards from "./cards";
+import Card from "./card";
 import Icon from "./Icon";
 //images
 import social_media_dashboard from "../../images/social_media_dashboard.png";
@@ -30,32 +30,32 @@ function Lv2() {
           CardsState ? "hidden" : " grid"
         }`}
       >
-        <Cards
+        <Card
           title="social Media Dashboard"
           img={social_media_dashboard}
           repoUrl="https://github.com/mate1225/social-media-dashboard"
           liveSiteUrl="https://mate1225.github.io/social-media-dashboard/"
         />
-        <Cards
+        <Card
           title="Testimonials Grid Section"
           img={Testimonials_grid_section}
           repoUrl="https://github.com/mate1225/testimonials-grid-section"
           liveSiteUrl="https://mate1225.github.io/testimonials-grid-section/"
         />
-        <Cards
+        <Card
           title="Time Tracking Dashboard"
           img={Time_tracking_dashboard}
           repoUrl="https://github.com/mate1225/Fronted-Mentor-time-tracking-dashboard"
           liveSiteUrl="https://mate1225.github.io/Fronted-Mentor-time-tracking-dashboard/"
         />
-        <Cards
+        <Card
           title="Tip Calculator App"
           img={Tip_Calculator_App}
           repoUrl="https://github.com/mate1225/Tip_Calculator"
           liveSiteUrl="https://mate1225.github.io/Tip_Calculator/"
         />
-        <Cards
-          title="Body_Mass Index calculator"
+        <Card
+          title="Body Mass Index calculator"
           img={Body_Mass_Index_calculator}
           repoUrl="https://github.com/mate1225/Body_Mass_Index_calculator"
           liveSiteUrl="https://mate1225.github.io/Body_Mass_Index_calculator/"

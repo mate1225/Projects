@@ -1,5 +1,5 @@
-import DarkModeToggle from "../DarkModeToggle";
-import HamburgerMenu from "../hamburgerMenu";
+/* import DarkModeToggle from "../DarkModeToggle";
+import HamburgerMenu from "../hamburgerMenu"; */
 import TitleButtons from "./TitleButtons";
 
 function HeaderComponent() {

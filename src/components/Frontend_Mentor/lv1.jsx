@@ -1,6 +1,6 @@
 import { useState } from "react";
 //jsx
-import Cards from "./cards";
+import Card from "./card";
 import Icon from "./Icon";
 //images
 import ProductPreviewCardImg from "../../images/Product_Preview_Card.png";
@@ -27,13 +27,13 @@ function Lv1() {
           CardsState ? "hidden" : " grid"
         }`}
       >
-        <Cards
+        <Card
           title="Product preview card"
           img={ProductPreviewCardImg}
           repoUrl="https://github.com/mate1225/product-preview-card-component"
           liveSiteUrl="https://mate1225.github.io/product-preview-card-component/"
         />
-        <Cards
+        <Card
           title="Order summary card"
           img={Order_summary_card}
           repoUrl="https://github.com/mate1225/order-summary-component"
