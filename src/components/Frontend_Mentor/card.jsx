@@ -1,23 +1,62 @@
-import { useState } from "react";
-function Card(props) {
-  const {
-    title,
-    img,
-    repoUrl,
-    liveSiteUrl,
-    /*   technologies1,
-    technologies2,
-    technologies3,
-    technologies4,
-    technologies5,
-    technologies6,
-    technologies7, */
-  } = props;
+import { useEffect, useState } from "react";
+//images
+//technologies images
+import css from "../../images/technologies/css.png";
+import scss from "../../images/technologies/scss.png";
+import javascript from "../../images/technologies/JavaScript.png";
+import react from "../../images/technologies/react.png";
+import html from "../../images/technologies/html.png";
+import vite from "../../images/technologies/vite.png";
+import tailwind_css from "../../images/technologies/tailwind-css.png";
+import Technologies from "./technologies";
+function Card({ title, img, repoUrl, liveSiteUrl, technologies }) {
+  console.log(technologies);
   const [imgState, setImgState] = useState(false);
   function showImage() {
     setImgState((prev) => !prev);
   }
+  //
+  /*   const [technologiesState, setTechnologiesState] = useState({
+    html: "",
+    css: "",
+    javascript: "",
+    sass: "",
+    react: "",
+    tcss: "",
+    typescript: "",
+  });
 
+  function sortArray(dataArray, predeterminedOrder) {
+    const result = predeterminedOrder.map((item) => {
+      if (dataArray.includes(item)) {
+        return item;
+      } else {
+        return "";
+      }
+    });
+
+    setTechnologiesState(() => {
+      return {
+        ...result,
+      };
+    });
+  }
+
+  const dataArray = technologies.split(" ");
+
+  const order = [
+    "html",
+    "css",
+    "javascript",
+    "sass",
+    "react",
+    "tcss",
+    "typescript",
+  ];
+  useEffect(() => {
+    sortArray(dataArray, order);
+  }, []);
+ */
   return (
     <>
       <section className="mx-5 flex flex-col gap-5 rounded-[1.25rem] bg-[#1F3454] p-5 text-white  xl:mx-0 xl:p-10">
@@ -28,16 +67,27 @@ function Card(props) {
           className=" cursor-pointer rounded-[1.25rem]"
           onClick={showImage}
         />
-        {/* <div>
-          <h3 className="  text-[1rem] font-semibold text-white">
+        <div>
+          {/*  <h3 className="  text-[1rem] font-semibold text-white">
             Used Technologies:
-          </h3>
-          <div className=" mt-3 flex justify-center gap-10">
-            <img
-              src={technologies1}
-              className={` w-[3em] ${technologies1 === "" ? "hidden" : ""}`}
+          </h3> */}
+          <div className=" mt-3 flex flex-wrap justify-center gap-10">
+            {/*  <Technologies image={html} state={technologiesState.html !== ""} />
+            <Technologies image={css} state={technologiesState.css !== ""} />
+            <Technologies
+              image={javascript}
+              state={technologiesState.javascript !== ""}
             />
-            <img
+            <Technologies image={scss} state={technologiesState.sass !== ""} />
+            <Technologies
+              image={react}
+              state={technologiesState.react !== ""}
+            />
+            <Technologies
+              image={tailwind_css}
+              state={technologiesState.tcss !== ""}
+            /> */}
+            {/*  <img
               src={technologies2}
               className={` w-[3rem] ${technologies1 === "" ? "hidden" : ""}`}
             />
@@ -60,9 +110,9 @@ function Card(props) {
             <img
               src={technologies7}
               className={` w-[3rem] ${technologies1 === "" ? "hidden" : ""}`}
-            />
+            /> */}
           </div>
-        </div> */}
+        </div>
 
         <div className=" grid gap-5 text-[1.4rem] lg:text-[2rem] ">
           <a
