@@ -41,7 +41,7 @@ function Lv2() {
           img={Time_tracking_dashboard}
           repoUrl="https://github.com/mate1225/Fronted-Mentor-time-tracking-dashboard"
           liveSiteUrl="https://mate1225.github.io/Fronted-Mentor-time-tracking-dashboard/"
-          technologies=""
+          technologies=" "
         />
         <Card
           title="Tip Calculator App"
