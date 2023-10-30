@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 //images
 //technologies images
-import css from "../../images/technologies/css.png";
+/* import css from "../../images/technologies/css.png";
 import scss from "../../images/technologies/scss.png";
 import javascript from "../../images/technologies/JavaScript.png";
 import react from "../../images/technologies/react.png";
 import html from "../../images/technologies/html.png";
 import vite from "../../images/technologies/vite.png";
 import tailwind_css from "../../images/technologies/tailwind-css.png";
-import Technologies from "./technologies";
+import Technologies from "./technologies"; */
 function Card({ title, img, repoUrl, liveSiteUrl, technologies }) {
   console.log(technologies);
   const [imgState, setImgState] = useState(false);
